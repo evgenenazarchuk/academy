@@ -3,7 +3,7 @@ package by.academy.classwork.lesson1;
 public class Application {
 	public static void main(String[] args) {
 		//it's my first commit
-		//p
+		//pfrfr
 		Cat cat = new Cat("Барсик");
 		cat.eat();
 		cat.sleep();
