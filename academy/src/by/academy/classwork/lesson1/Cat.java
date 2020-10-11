@@ -1,7 +1,7 @@
 package by.academy.classwork.lesson1;
 
 import java.util.Scanner;
-
+//it's my first commit
 public class Cat {
 	int age;
 	String nickname;
