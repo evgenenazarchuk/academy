@@ -62,9 +62,12 @@ public class Cat {
 		System.out.println("Первая буква 1-го кота:" + initials);
 		return initials;
 	}
-	
-	
-		
+
+	public void isHomeAnimal() {
+		if (isHomeAnimal)
+		System.out.println("Это домашнее животное");
+		else 
+        System.out.println("Это не домашнее животное");
 	}
 
-
+}

@@ -21,6 +21,6 @@ public class Application {
 		cat.setMoney();
 		cat.getInitials();
 		cat.setInitials();
-
+        cat.isHomeAnimal();
 	}
 }
