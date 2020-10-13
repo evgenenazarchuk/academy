@@ -1,45 +1,70 @@
 package by.academy.classwork.lesson1;
 
-import java.util.Scanner;
-//it's my first commit
 public class Cat {
 	int age;
 	String nickname;
 	double money;
+	char initials;
+	boolean isHomeAnimal;
 
 	public Cat() {
-	};
+	}
 
-	public Cat(String nicname) {
-		this.nickname = nicname;
-	};
+	public Cat(String nickname) {
+		this.nickname = nickname;
+	}
+
+	public Cat(String nickname, int age) {
+		this.nickname = nickname;
+		this.age = age;
+	}
 
 	public void grow(int addAge) {
-		System.out.println("Кот вырос на " + addAge + " год(а)");
+		System.out.println("РљРѕС‚ СЂР°СЃС‚РµС‚ " + addAge + " РіРѕРґ(Р°)");
 		age = age + addAge;
 	}
 
 	public void sleep() {
-		System.out.println("Кот спипит");
+		System.out.println("РљРѕС‚ СЃРїРёС‚");
+	}
+
+	public int getAge() {
+		return age;
 	}
 
 	public void eat() {
-		System.out.println("Кот ест");
+		System.out.println("РљРѕС‚ РµСЃС‚");
 	}
 
 	public void walk() {
-		System.out.println("Кот гуляет");
+		System.out.println("РљРѕС‚ РіСѓР»СЏРµС‚");
+	}
+
+	public void printAge() {
+		System.out.println("РљРѕС‚ " + nickname + " age " + age);
 	}
 
 	public void getMoney() {
-		System.out.println("Введите количество денег");
-		Scanner scan = new Scanner(System.in);
-		money = scan.nextInt();
+		money = 10.2;
+
 	}
 
-	public double showMoney() {
-		System.out.println("Кот проел " + money + " рублей");
+	public double setMoney() {
+		System.out.println("РљРѕС‚ РїСЂРѕРµР» " + money + " СЂСѓР±Р»СЏ(РµР№)");
 		return money;
 	}
 
-}
+	public void getInitials() {
+		initials = 'B';
+	}
+
+	public char setInitials() {
+		System.out.println("РџРµСЂРІР°СЏ Р±СѓРєРІР° 1-РіРѕ РєРѕС‚Р°:" + initials);
+		return initials;
+	}
+	
+	
+		
+	}
+
+

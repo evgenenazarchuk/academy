@@ -2,19 +2,25 @@ package by.academy.classwork.lesson1;
 
 public class Application {
 	public static void main(String[] args) {
-		//it's my first commit
-		//pfrfr
-		Cat cat = new Cat("Барсик");
+
+		Cat cat = new Cat("Black");
+		Cat cat1 = new Cat("White", 3);
 		cat.eat();
 		cat.sleep();
 		cat.walk();
-		System.out.println(cat.age);
+		cat.printAge();
 		cat.grow(1);
-		System.out.println(cat.age);
+		cat.printAge();
 		cat.grow(3);
-		System.out.println("Barsik age: " + cat.age + "года   ");
+		cat.printAge();
+		cat1.printAge();
+
+		int catAge = cat.getAge();
+		//System.out.println(catAge);
 		cat.getMoney();
-		cat.showMoney();
+		cat.setMoney();
+		cat.getInitials();
+		cat.setInitials();
 
 	}
 }
